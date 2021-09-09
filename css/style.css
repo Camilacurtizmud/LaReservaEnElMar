@@ -39,6 +39,8 @@ h2{
 p{
    text-align: center;
    margin: .5em;
+   line-height: 25px;
+   font-size: 17px;
 }
 
 body{
@@ -47,17 +49,24 @@ body{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    font-family: sans-serif;
     padding: 0;
 }
 
 /*INDEX MAIN*/
-.img-home{
-    width: 90%;
-    height: 30em;
-    padding: .5em;
-    margin-left: 5%;
+
+.flex-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+.img-home{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
 
 .txt-home{
     display: flex;
@@ -78,14 +87,20 @@ body{
     color: var(--clr-bg-white);
     font-size: 20px;
     padding: .5em;
-    margin: .3em;
+    margin: 1em;
     text-align: center;
     letter-spacing: .1em;
     text-decoration: none;
     outline: none;
     border: none;
-    cursor: grab;
+    cursor: pointer;
 }
+
+.btn-home:hover {
+    transition: 0.3s;
+    background-color: #9baa90;
+}
+
 
 .cards-home{
     border-top: solid;
@@ -101,7 +116,7 @@ body{
     flex-flow: row;
     justify-content: space-around;
     margin: .5em;
-    padding: .5em;
+    padding-top: .3em;
 }
 .img-nos-1{
     width: 30%;
@@ -150,18 +165,28 @@ body{
 }
    
 @-webkit-keyframes fade{
-from{opacity:.4}
-to{opacity:1}
+    from{ 
+        opacity:.4
+    }
+    to{
+        opacity:1
+    }
 }
 
 @keyframes fade{
-from{opacity:.4}
-to{opacity:1}
+    from{
+        opacity:.4
+    }
+    to{
+        opacity:1
+    }
 }
 
+
 .txt-apartamentos{
-    background-color: var(--clr-accent-200) ;
-}
+    border: solid var(--clr-accent-200);
+ }
+
 /*ACTIVIDADES*/
 
 .contenedor{
@@ -274,8 +299,11 @@ textarea{
 form.form-contact{
     display: flex;
     flex-flow: column nowrap;
-    max-width: 450px;
+    max-width: 650px;
     margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 form.form-contact label{
@@ -317,4 +345,7 @@ form.form-contact .btn{
     text-underline-offset: .4em;
 }
 
+.st-c{
+    margin-top: .3em;
+}
 

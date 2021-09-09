@@ -10,6 +10,7 @@ footer{
 }
 
 .logo-footer{
+    margin-right: 1em;
     flex: 0 0 150px;
     line-height: 80px;
 
@@ -19,6 +20,10 @@ footer{
     width: 100%;
     height: auto;
     margin-right: 5px;
+}
+
+.redes{
+    margin-left: 1em;
 }
 
 footer a{

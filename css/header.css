@@ -72,7 +72,6 @@
 @media (max-width: 768px) {
     
     .header{
-        position: fixed;
         height: 60px;
     }
     
@@ -85,7 +84,7 @@
         flex-flow: column;
         align-items: center;
         margin-right: 0;
-        background: var(--clr-accent-600) ;
+        background: var(--clr-accent-600);
         position: fixed;
         left: 0;
         top: 60px;
